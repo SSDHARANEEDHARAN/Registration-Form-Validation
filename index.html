@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="background">
+        <video autoplay muted loop class="video">
+            <source src="Animation Test.mp4" type="video/mp4" class="v"></source>
+        </video>
+        
+        <div class="login">
+            <div class="login-form">
+                <h1 class="text-time">REGISTRATION FORM</h1>
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" required>
+                        <div id="nameError" class="name hidden">Name cannot be empty.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                        <div id="emailError" class="email hidden">Invalid email format.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" required>
+                        <div id="passwordError" class="password hidden">Password must be at least 6 characters long.</div>
+                    </div>
+                    <div class="button">
+                    <button class="text-time" type="submit" id="submitBtn" disabled>Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
